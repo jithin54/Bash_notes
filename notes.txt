@@ -132,3 +132,15 @@ touch
 -------------
 update the date modified
 
+IMP: if you touch a file that is not existing
+it creates a file
+
+cp (copying file\directory)
+--------------------
+cp {source} {destination with file name}
+
+use -r recursive dor directory copying
+
+
+
+
