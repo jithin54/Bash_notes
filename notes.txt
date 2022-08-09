@@ -167,3 +167,57 @@ rmdir (remove EMPTY diectory)
 this will delete only empty diectory (this useful for cleaning)
 if directory has contents, we NEED to use rm -r
 
+EDITING TEXT FILE
+-------------------------
+cat
+-----------------
+MAINLY for viewing text file
+opeining text files
+
+cat file1.txt
+
+creating a small text file on the go
+	cat >>file2
+	
+	enter your data here. Ctrl+X
+	
+it concatenate the data
+
+
+cat > file1 (create a new file)
+cat >> file1 (append to the file)
+
+more
+-------------
+opens the file in the terminal
+
+less
+--------------
+opens the file in terminal line by line
+
+edit a file using text editor
+---------------------------------
+there are many text editor
+most common one is nano
+
+nano file (opens an existing file or creates a new one)
+
+*** nano to edit a file and cat to view the file
+
+piping and redirection
+------------------
+taking from console and saving to a file
+
+cat > file1 (create a new file)
+cat >> file1 (append to the file)
+
+piping
+history | less
+
+ls -al > list.txt
+
+creates a new file with ls -al results
+
+another ex: history > history.txt
+* use >> add data at the end
+
