@@ -141,6 +141,29 @@ cp {source} {destination with file name}
 
 use -r recursive dor directory copying
 
+mv (move or rename)
+-----------------------
+mv source destination
 
+for renaming 
+mv file1.txt file2.txt
 
+rm (removing) 
+----------------
+There is no way to undelete (no recycle bin)
+careull with rm
+
+rm filename
+
+rm file* : removes everything starting file "file"
+
+rm * : remove everything in directory
+
+to delete the directory, we have to use recursive
+rm -r dir_name
+
+rmdir (remove EMPTY diectory)
+----------------------------
+this will delete only empty diectory (this useful for cleaning)
+if directory has contents, we NEED to use rm -r
 
