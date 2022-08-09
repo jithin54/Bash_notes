@@ -27,7 +27,7 @@ man ls to get the manual
 	how to read manual (https://www.youtube.com/watch?v=uJnrh9hAQR0)
 	---------------------
 	bold text : type exactly as shown
-	italic text : replace with appropriate text
+	italic text or underline : replace with appropriate text
 	
 	[-abc] : arguments within are optional
 	-a|-b : options can not be used together
@@ -50,6 +50,8 @@ man ls to get the manual
 additionally --help also works for some commands
 	ls --help
 
+simplest form is whatis
+
 ls
 ------------
 list storage
@@ -57,6 +59,76 @@ list storage
 	ls -a or -all
 	all files including hidden (hidden files with . starting)
 	
+	ls -l 
+	long list 
 	
+cd
+-------------
+change directory
+	it supports the auto completion
 	
+	use escape character \space for space in the naming
+	c/New\ Folder
 	
+cd ..
+go back to one level up
+
+cd  (with no argument)
+take me home
+
+cd ~
+take me home
+
+pushd and popd (Not needed usually)
+---------------------
+pushd : push to a directory 
+popd : comeback to directory i was previously in
+
+file
+---------------
+file type
+
+locate
+-------------
+find a file
+	we need to update the database to add locate items
+	
+which
+---------------
+finds other commands for use (is it installed or not, where is the location)
+all the bach commandes are placed in /usr/bin
+ex: usr/bin/ls
+
+history
+-----------
+shows all of the commands you typed
+	list last 1000 commands
+	
+BEST: use upper arrow for the last commands
+
+whatis
+-------------
+simplest explanation of a bash command
+
+apropos {time} (does not work for me)
+------------------
+search for a keyword in list of commands
+
+man
+----------
+manual
+
+IMP: not every command has a man page
+
+WORKING WITH FILES AND DIRECTORY
+------------------------------------
+mkdir
+--------
+make a directory
+
+mkdir red black blue : creates 3 directory
+
+touch
+-------------
+update the date modified
+
