@@ -221,3 +221,93 @@ creates a new file with ls -al results
 another ex: history > history.txt
 * use >> add data at the end
 
+WORKING WITH USER
+----------------------
+
+sudo : working with another user (mostly admin)
+
+ex: sudo ls
+sudo ls -al
+
+Become the sudo user
+you can change it to sudo user instead of typing everything
+sudo -s
+
+risky to use su option 
+sudo vs su check in google
+
+sudo will change $ to # and give root 
+
+to exit the sudo/root user
+just type: exit
+
+change user
+-----------
+su - other_username
+
+su - john
+
+su john (without hyphen) will also change user but pwd stays same (you need to manually navigate)
+
+su - (you become root user) : very risky
+
+avaialable users
+--------------------
+users
+
+id
+------------
+gives lot of information about current users like uid
+
+more to know about users : google it
+
+FILE PERMISSION
+
+user	group	everyone
+rwx 	rwx		rwx
+bit 4 2 1 -> will give you a bit value 0-7
+
+r- read
+w- write / modify / delete
+x- executble
+
+change mode
+chmod +x file1
+permission changd to x
+
+or
+chmod 754 file1
+use bit value
+
+directory handles permission
+
+for file
+chmod 777 file1 - all has all permission
+
+for directory you have to set x if you want others to see the diectory
+execute for directory is like show directory
+for directory it shows something like this
+drwxr-xr-x
+d for directory
+
+processes
+-------------
+kill a process in a prompt
+---------------------
+^C to kill
+
+	watch
+	---------------
+	runs every 2 seconds
+
+	watch free -h
+	kill ^c
+
+process in a computer
+---------------------
+killall firefox
+
+you cant kill something somebody opened up
+you can do it with sudo
+
+
