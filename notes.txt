@@ -1,1 +1,42 @@
+Bash
+------------
+Prompt tells you
+joe@Dell:~$
 
+user@Compute
+~ -> home directory
+$ -> std user
+
+linux file system
+
+/ -> root
+/home/ home directory
+
+pwd
+-------------
+full path
+
+clear
+---------------
+clear prompt
+
+man
+-----------
+man ls to get the manual
+
+	how to read manual (https://www.youtube.com/watch?v=uJnrh9hAQR0)
+	---------------------
+	[] arguments in square brackets are optional
+	items not in brackets MUST be used
+	
+
+ls
+------------
+list storage
+
+	ls -a or -all
+	all files including hidden (hidden files with . starting)
+	
+	
+	
+	
