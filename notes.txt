@@ -26,9 +26,29 @@ man ls to get the manual
 
 	how to read manual (https://www.youtube.com/watch?v=uJnrh9hAQR0)
 	---------------------
+	bold text : type exactly as shown
+	italic text : replace with appropriate text
+	
+	[-abc] : arguments within are optional
+	-a|-b : options can not be used together
+	
+	argument ... : argument is repeatable
+	
+	only one hyphen - is okay for all the flags
+	ls -l -a
+	same as ls -la
+	
 	[] arguments in square brackets are optional
 	items not in brackets MUST be used
 	
+	long format
+	--all 		--width = 60
+	
+	short format
+	-a			-w 60
+
+additionally --help also works for some commands
+	ls --help
 
 ls
 ------------
