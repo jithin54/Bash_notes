@@ -141,6 +141,8 @@ cp {source} {destination with file name}
 
 use -r recursive dor directory copying
 
+use -v verbose disply what is happening
+
 mv (move or rename)
 -----------------------
 mv source destination
@@ -195,6 +197,17 @@ less
 --------------
 opens the file in terminal line by line
 
+head 
+------------------
+print first few lines (10 lines otherwise configure for number of lines
+
+tail
+-----------
+prints last 10 lines (otherwise configure the number of lines
+
+-f it will keep printing if new lines are addded at the end
+this is useful for monitoring logs file live
+
 edit a file using text editor
 ---------------------------------
 there are many text editor
@@ -204,6 +217,11 @@ nano file (opens an existing file or creates a new one)
 
 *** nano to edit a file and cat to view the file
 
+wc
+------------
+word count
+count numbe rof words, lines size etc
+
 piping and redirection
 ------------------
 taking from console and saving to a file
@@ -211,8 +229,10 @@ taking from console and saving to a file
 cat > file1 (create a new file)
 cat >> file1 (append to the file)
 
-piping
+piping (passing to another command
 history | less
+ls | cat
+ls | wc
 
 ls -al > list.txt
 
@@ -221,8 +241,80 @@ creates a new file with ls -al results
 another ex: history > history.txt
 * use >> add data at the end
 
+echo
+--------------
+display (echos) everything you type after echo
+
+echo hello world
+
+usage
+echo hello world > new_file.txt : creates a file
+
+echo * : shows everything in the current path
+echo *.txt : text files
+
+echo ~ : print home path
+
+echo $PATH : shows the path enviornment variable
+
+Expansion (expands and pass it to commands)
+------------------
+Path name expansion
+-----------------
+ls -l *.txt
+
+? : matches anything one character
+? : any 2 character
+
+ls -l *.???
+
+Curly brace expansion
+
+touch {a,b,c}.txt
+a.txt b.txt c.txt
+
+touch main.{c,cpp,java}
+
+IMP: 
+touch {1..100}.c
+
+diff
+------------
+similar to git diff
+
+24a25 : line 24 first file
+line 25: added
+
+25d24 : deleted
+
+-y see files side by side
+
+-u more like git diff
+
+find
+--------------
+find location expression
+
+find . : find everything in current directory
+
+find . *.txt
+
+find . -name '*.py' : find all py
+	> file.txt
+
+directory search
+-------
+find . -type d : look for directory
+find . -type f : look for files
+
+combining
+find . -type d -name "New folder" :
 WORKING WITH USER
 ----------------------
+
+whoami
+----------------
+print current user
 
 sudo : working with another user (mostly admin)
 
