@@ -293,6 +293,11 @@ line 25: added
 
 find
 --------------
+IMP:
+find search for a file in filesystem
+grep search for a something in a file
+
+
 find location expression
 
 find . : find everything in current directory
@@ -303,12 +308,39 @@ find . -name '*.py' : find all py
 	> file.txt
 
 directory search
--------
+-----------
 find . -type d : look for directory
 find . -type f : look for files
 
 combining
 find . -type d -name "New folder" :
+				-iname : for case insensitive
+-or for ORing
+find . -type d -name 'New*' -or 'file*'
+
+find . -size +100k : + for greater than
+					 - for lesser than
+					 M - for MB
+					 k for kB
+
+ANDing
+find . -type f -and -name '*.txt'
+
+-maxdepth 1 : how many levels inside you need to search
+grep
+------------
+search for something in a file
+
+grep keyword filename
+
+-n display line number
+
+grep -r hello .
+recursive search all the document
+
+IMP:grep works with regex
+
+
 WORKING WITH USER
 ----------------------
 
@@ -332,6 +364,23 @@ sudo will change $ to # and give root
 
 to exit the sudo/root user
 just type: exit
+
+du
+------------
+size of the file 
+
+du .
+
+or du . -h
+
+-h : human readable MB or KB or GB
+
+-k : kB
+-M : MB
+
+usecase
+du . -h | sort -h
+
 
 change user
 -----------
