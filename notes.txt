@@ -197,6 +197,9 @@ less
 --------------
 opens the file in terminal line by line
 
+to search in more/less
+/keyword
+
 head 
 ------------------
 print first few lines (10 lines otherwise configure for number of lines
@@ -233,6 +236,7 @@ piping (passing to another command
 history | less
 ls | cat
 ls | wc
+history | grep hello 
 
 ls -al > list.txt
 
@@ -365,6 +369,15 @@ sudo will change $ to # and give root
 to exit the sudo/root user
 just type: exit
 
+date
+-------
+print date
+
+cal
+------
+print calendar
+
+
 du
 ------------
 size of the file 
@@ -381,6 +394,9 @@ or du . -h
 usecase
 du . -h | sort -h
 
+df
+----------------
+file system and usage, free etc
 
 change user
 -----------
@@ -446,9 +462,51 @@ kill a process in a prompt
 
 process in a computer
 ---------------------
-killall firefox
+ps
+----------
+process status
+
+ps : shows the process run by user
+
+ps a :  process started by all users
+
+ps a | grep Chrome
+
+kill 
+---------
+to kill a process using its Process ID (process ID you get from running ps command)
+
+shutdown, force shutdown, kill etc decided by signal name/number
+google for more
+
+kill -9 PID : 9 is gentle shutdown
+kill -15 PID : hard kill
+
+number 9 and 15 you get from signal name/number
+
+
+killall
+---------------
+killall processname
+
+killall mozilla
 
 you cant kill something somebody opened up
 you can do it with sudo
 
+fg and bg
+-------------
+jobs
+-------
+show all jobs
 
+^C : Cancel or stop
+^Z : Pauses/suspend
+
+we can resume these jobs in foreground or background
+
+jobs will list all the process with serial numbers
+
+fg serial_number : will run in foreground
+
+bg serial_number : will run in background
